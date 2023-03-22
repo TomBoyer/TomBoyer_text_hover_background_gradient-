@@ -1,0 +1,98 @@
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* overflow: hidden; */
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  font-size: clamp(0.8rem, 2vw + 0.5rem, 3rem);
+  --bg: #fefefe;
+  background-color: var(--bg);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;900&display=swap");
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+html {
+  font-size: 16px;
+  font-family: var(--font1);
+}
+
+/* reset */
+
+/* variables */
+:root {
+  --color-1: ;
+  --color-2: ;
+  --color-3: ;
+
+  --color-1-clr: ;
+  --color-2-clr: ;
+  --color-3-clr: ;
+
+  --color-white: #ffffff;
+
+  --box-shadow-1: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  --duration1: 0.2s;
+  --duration2: 0.8s;
+
+  --font1: "Noto Sans", sans-serif;
+  /*--font2: "Raleway", sans-serif;
+  --font3: "Hind Vadodara", sans-serif; */
+}
+
+/* variables */
+
+body > * {
+  width: 70vw;
+}
+
+h1,
+h2 {
+  cursor: pointer;
+  margin: 0;
+}
+.hglt {
+  transition: 0.4s ease;
+  line-height: 1.3em;
+  padding: 0.05em 0.5em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  color: #fff;
+  --c1: rgba(131 58 180 / 1);
+  --c2: rgba(252 176 69 / 1);
+  --c-m: rgba(253 29 29 / 1);
+  --g1: #0000 0.5em, var(--c1) calc(0.5em + 1px);
+  --g2: #0000 0.5em, var(--c2) calc(0.5em + 1px);
+  --g3: var(--c1), var(--c-m), var(--c2);
+  background: linear-gradient(90deg, var(--g3)) center,
+    linear-gradient(110deg, var(--g1)) left,
+    linear-gradient(-70deg, var(--g2)) right;
+  background-size: calc(100% - 2em) calc(100% - 0.15em), 2em calc(100% - 0.15em),
+    2em calc(100% - 0.15em);
+
+  background-repeat: no-repeat;
+  transform-origin: center calc(100% - 0.18em);
+}
+.hglt:hover {
+  color: #1f2020;
+  background-size: calc(100% - 2em) max(0.1em, 2px), 2em max(0.1em, 2px),
+    2em max(0.1em, 2px);
+  background-position-y: calc(100% - 0.18em);
+  text-shadow: 0 -0.05em 0 var(--bg), -0.05em -0.05em 0 var(--bg),
+    -0.05em 0 0 var(--bg), 0 0.05em 0 var(--bg), 0.05em 0.05em 0 var(--bg),
+    0.05em 0 0 var(--bg);
+}
